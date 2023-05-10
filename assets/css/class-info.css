@@ -1,0 +1,75 @@
+* {
+    font-family: "Montserrat";
+}
+
+body {
+    margin: 0px;
+    background-color: #FFFAC2;
+    font-size: 20px;;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+/* Navbar */
+.logo {
+    width: 30%;
+    height: 30%;
+    border-radius: 13px;
+    box-shadow: 6px 6px 3px #ccc;
+}
+
+.btn {
+    background-color: #EBECF0 !important;
+    border-color: #8C52FF !important;
+    color: black !important;
+    font-weight: 700 !important;
+}
+
+/** WORKSHOP DETAILS **/
+#workshop-details{
+    padding: 3%;
+}
+
+.workshop-title{
+    font-size: 40px;
+    padding: 1%;
+}
+
+.card{
+    background-color: #FEFD76;
+    color: black;
+    border: none;
+    position: relative;
+    box-shadow: 20px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.workshop-image {
+    border-radius: 5px;
+    
+}
+
+.workshop-text{
+    color: black;
+    text-align: center;
+}
+
+.workshop-column .card .workshop-para {
+    padding: 10px 10px 0px;
+    text-align: center;
+  }
+
+
+
+
+/* 
+title
+description
+location 
+date
+time
+image 
+*/
+

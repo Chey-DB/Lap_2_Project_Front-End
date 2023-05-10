@@ -1,12 +1,11 @@
 /* Custom CSS */
-*{
-    background-color: #FFFAC2;
+* {
     font-family: "Montserrat";
 }
 
 body {
     margin: 0px;
-    /* background-color: #FFFAC2; */
+    background-color: #FFFAC2;
 }
 
 a {
@@ -15,10 +14,15 @@ a {
 }
 
 /*NAV*/
+.navbar {
+    background-color: #FFFAC2;
+}
+
 .logo {
     width: 30%;
     height: 30%;
     border-radius: 13px;
+    box-shadow: 6px 6px 3px #ccc;
 }
 
 .btn {
@@ -45,7 +49,7 @@ font-weight: 700 !important;
 
 .carousel-container {
     max-height: auto;
-    max-width: 100%;
+    max-width: 85%;
     margin: 0 auto;
     justify-content: center;
 }
@@ -59,6 +63,8 @@ font-weight: 700 !important;
 #welcome {
     text-align: center;
     padding: 30px;
+    width: 80%;
+    margin: auto;
     
 }
 
@@ -70,6 +76,8 @@ font-weight: 700 !important;
     border-color: black;
     border-width: thin;
 }
+
+
 
 /* Media Queries*/
 @media (min-width: 768px) {
