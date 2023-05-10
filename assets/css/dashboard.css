@@ -1,0 +1,112 @@
+* {
+    font-family: "Montserrat";
+}
+
+body {
+    margin: 0px;
+    background-color: #FFFAC2;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+/* Navbar */
+.logo {
+    width: 30%;
+    height: 30%;
+    border-radius: 13px;
+    box-shadow: 6px 6px 3px #ccc;
+}
+
+.btn {
+    background-color: #EBECF0 !important;
+    border-color: #8C52FF !important;
+    color: black !important;
+    font-weight: 700 !important;
+}
+/*Welcome message */
+#welcome-dashboard{
+    text-align: center;
+    margin: 50px;
+    background-color: #FFFAC2;
+    padding: 3% 10% 3%;
+}
+
+hr {
+    width: 70%;
+    margin: auto;
+}
+
+#figures {
+    padding-top: 25px;
+}
+
+h3{
+    font-weight: 600;
+}
+
+/* CARDS */
+#workshop-cards{
+    background-color: #ffff;
+    padding: 5% 7%;
+}
+
+.workshop-title{
+    font-size: 60px;
+    text-align: center;
+}
+
+.workshop-text{
+    color: white;
+    text-align: center;
+    text-shadow: black 1px 0 10px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card{
+    width: 20rem;
+    background-color: #8c52ff;
+    color: white;
+    border: none;
+    position: relative;
+}
+
+.workshop-column {
+    width: 25rem;
+  }
+
+.workshop-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.workshop-image:hover{
+    opacity: 0.5;
+}
+
+.workshop-column .card .workshop-para {
+    padding: 10px 10px 0px;
+    text-align: center;
+  }
+  
+.workshop-column{
+    padding: 2%;
+    justify-content: center;
+}
+
+/*----------------Footer-------------*/
+#footer{
+    padding: 3% 10%;
+    color: black;
+    text-align: center;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
