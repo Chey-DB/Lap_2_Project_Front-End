@@ -1,0 +1,89 @@
+/* Custom CSS */
+*{
+    background-color: #FFFAC2;
+    font-family: "Montserrat";
+}
+
+body {
+    margin: 0px;
+    /* background-color: #FFFAC2; */
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+/*NAV*/
+.logo {
+    width: 30%;
+    height: 30%;
+    border-radius: 13px;
+}
+
+.btn {
+background-color: #EBECF0 !important;
+border-color: #8C52FF !important;
+color: black !important;
+font-weight: 700 !important;
+}
+
+.btn a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+/** CAROUSEL **/
+.carousel-indicators button {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#carousel {
+    position: relative;
+}
+
+.carousel-container {
+    max-height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.carousel img {
+    width: 100%;
+    max-height: fit-content;
+}
+
+/* Welcome message*/
+#welcome {
+    text-align: center;
+    padding: 30px;
+    
+}
+
+.welcome-message{
+    background-color: #FEFD76;
+    padding: 2%;
+    border-radius: 13px;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+}
+
+/* Media Queries*/
+@media (min-width: 768px) {
+  .carousel img {
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel img {
+    max-height: 300px;
+  }
+}
+
+.carousel-indicators button {
+  background-color: transparent !important;
+}
