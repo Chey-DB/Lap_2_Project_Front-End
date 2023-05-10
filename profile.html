@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a45420c94f.js" crossorigin="anonymous"></script>
     <title>Profile</title>
 </head>
 <body>
-    
+    <div class="center">
+        <h1>Add event</h1>
+        <form method="post";>
+            <div class="txt_field">
+                <label>Title</label>
+                <input type="text" required>
+                <span></span>
+                
+            </div>
+            <div class="txt_field description">
+                <label>Description</label>
+                <textarea id="msg" name="msg" rows="5" cols="70"></textarea>
+                <span></span>
+                
+            </div>
+            <div class="txt_field">
+                <label>Location</label>
+                 <input type="text" required>
+                 <span></span>
+            </div> 
+            
+            <div class="txt_field">
+                <label>Date</label>
+                 <input type="date" required>
+                 <span></span>
+            </div>
+
+            <div class="txt_field">
+                <label>Time</label>
+                 <input type="time" required>
+                 <span></span>
+            </div>
+
+            <div class="pass">Upload Image</div>
+            
+            <input type="submit" value="Create new event">
+        </form>
+    </div>
+
+    <section id="socials">
+        <i class="social-icon fab fa-twitter"></i>
+        <i class="social-icon fab fa-facebook"></i>
+        <i class="social-icon fab fa-instagram"></i>
+        <i class="social-icon fas fa-envelope"></i>
+    </section>
 </body>
 </html>
