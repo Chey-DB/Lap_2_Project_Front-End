@@ -203,3 +203,7 @@ header {
         margin: 7px 15px;
     }
 
+    .logout-btn{
+        margin-left: 1400px;
+        width: 100px;
+    }
