@@ -2,14 +2,22 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat";
-    /* background: linear-gradient(0deg, #3B3486 30%, #FFFAC2 70%); */
     background: linear-gradient(to left, #FFFAC2 0%, #FFFAC2 70%, #3B3486 70%, #3B3486 100%);
-    font-size: 20px;
-    /* overflow-x: hidden; */
+    font-size: 20px !important;
     width: 50%;
 }
 
+nav a {
+    color: #ffff;
+}
 nav a:visited {
+    color: #ffff;
+}
+
+.update {
+    color: #ffff;
+}
+.update::visited {
     color: #ffff;
 }
   
@@ -140,16 +148,19 @@ input[type="submit"]{
     border: 4px solid #fff;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.);
     position: absolute;
-    left: 100px;
+    left: 70px;
 }
 .main-bd {
     display: flex;
-    padding-right: 15px;
+
 }
 
 .left-side{
     width: 1200px;
     margin: 0 auto;
+
+
+
 }
 
 #bio {
@@ -168,7 +179,7 @@ display: flex;
 color: #ffff;
 height: fit-content;
 background: none;
-padding: 5px 1px 20px;
+padding: 5px 1px 120px;
 }
 
 header {
@@ -182,28 +193,89 @@ header {
     text-align: center;
     border-radius: 15px;
     padding: 10px;
-    /* margin-left: 500px;
-    
-    /* margin: 20px 0px 20px 580px; */
     text-align: center;
     width: 70%;
     height: 25%;
     background-color: #FEFD76;
     }
 
-    .event-images{
+
+    #workshop-cards{
+        padding: 5% 7%;
+    }
+    
+    .workshop-title{
+        font-size: 60px;
+        text-align: center;
+    }
+    
+    .workshop-text{
+        color: white;
+        text-align: center;
+        text-shadow: black 1px 0 10px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #eventlisting .card {
+        width: 20rem;
+        background-color: #8c52ff;
+        color: white;
+        border: none;
+        position: relative;
+    }
+    
+    .workshop-column {
+        width: 25rem;
+        padding: 2%;
+        justify-content: center;
+        gap: 2rem;
+      }
+    
+    .workshop-image {
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+    }
+    
+    .workshop-image:hover{
+        opacity: 0.5;
+    }
+    
+    .workshop-column .card .workshop-para {
+        padding: 10px 10px 0px;
+        text-align: center;
+      }
+      
+    /* Delete & Update buttons, inc logout and go back*/
+
+    #eventlisting .deletebtn, .update-btn {
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    #eventlisting .deletebtn:hover, .update-btn:hover{
+        color: black;
+    } 
+
+    .logout-back-btn{
+        margin-left: 1300px;
+        width: 200px;
         display: flex;
         justify-content: space-evenly;
+        color: black !important;
+     
     }
 
-    .btn {
-        display: flex;
-        justify-content: flex-end;
-        padding: 8px;
-        margin: 7px 15px;
+    .logout-back-btn a{
+        text-decoration: none;
+        
     }
 
-    .logout-btn{
-        margin-left: 1400px;
-        width: 100px;
+    .logout-back-btn button{
+        border: 1px solid black;
+        border-radius: 10px;
     }
