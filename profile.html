@@ -10,43 +10,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/a45420c94f.js" crossorigin="anonymous"></script>
+    <script src="./assets/profile.js" defer></script>
     <title>Profile</title>
 </head>
 <body>
     <div class="center">
         <h1>Add event</h1>
-        <form method="post";>
+        <form id="workshop-form" method="post";>
             <div class="txt_field">
                 <label>Title</label>
-                <input type="text" required>
+                <input type="text" id="title" name="title" required>
                 <span></span>
                 
             </div>
             <div class="txt_field description">
                 <label>Description</label>
-                <textarea id="msg" name="msg" rows="5" cols="70"></textarea>
+                <textarea id="description" name="description" rows="5" cols="70"></textarea>
                 <span></span>
                 
             </div>
             <div class="txt_field">
                 <label>Location</label>
-                 <input type="text" required>
+                 <input type="text" id="location" name="location" required>
                  <span></span>
             </div> 
             
             <div class="txt_field">
                 <label>Date</label>
-                 <input type="date" required>
+                 <input type="date" id="date" name="date" required>
                  <span></span>
             </div>
 
             <div class="txt_field">
                 <label>Time</label>
-                 <input type="time" required>
+                 <input type="time" id="time" name="time" required>
                  <span></span>
             </div>
-
-            <div class="pass">Upload Image</div>
+            <div class="pass">
+                <label>Workshop Image:</label>
+                <span></span>
+                <input type="file" id="profileImage" name="data_image">
+            </div>
             
             <input type="submit" value="Create new event">
         </form>
