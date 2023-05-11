@@ -79,7 +79,7 @@ font-weight: 700 !important;
     border-width: thin;
 }
 
-button{
+.jointhehub-btn{
     width: 20%;
     height: 50px;
     border: 1px solid;
@@ -93,7 +93,7 @@ button{
     margin-left: auto;
     margin-right: auto;
  }
- button:hover{
+ .jointhehub-btn:hover{
      border-color: #825cff;
      transition: .5s;
  }
