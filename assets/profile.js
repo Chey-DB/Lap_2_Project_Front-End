@@ -1,3 +1,7 @@
+const updateWorkshopDetails = require("./workshop-info.js");
+
+const USERNAME = require("./login.js");
+
 function createWorkshopElement (data) {
     const workshop = document.createElement("div");
     workshop.className = "card";
@@ -29,7 +33,6 @@ function createWorkshopElement (data) {
 
 document.getElementById("workshop-form").addEventListener("submit", async (e) => {
     e.preventDefault();
-    
 
     const form = new FormData(e.target);
 
@@ -45,23 +48,25 @@ document.getElementById("workshop-form").addEventListener("submit", async (e) =>
             location: form.get("location"),
             date: form.get("date"),
             time: form.get("time"),
-            data_image: form.get("data_image").name
+            data_image: form.get("data_image").name,
+            username: USERNAME
         })
     }
 
-    
-
     const response = await fetch("http://localhost:3000/workshops", options);
+    console.log(response);
     const data = await response.json();
-    
+    console.log(data);
 
     if (response.status == 201) {
-        alert("Workshop created successfully");
         window.location.reload();
     } else {
         alert(data.error);
     }
-})
+
+    updateWorkshopDetails(data);
+});
+
 
 async function loadMyWorkshops () {
 
@@ -82,7 +87,7 @@ async function loadMyWorkshops () {
             container.appendChild(elem);
         })
     } else {
-        window.location.assign("./index.html");
+        window.location.assign("./dashboard.html");
     }
 
 }

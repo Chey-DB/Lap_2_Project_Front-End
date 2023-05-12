@@ -3,6 +3,8 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
 
     const form = new FormData(e.target);
 
+    USERNAME = form.get("username");
+
     const options = {
         method: "POST",
         headers: {
@@ -25,3 +27,5 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
         alert(data.error);
     }
 })
+
+module.exports = USERNAME;
